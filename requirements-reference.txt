@@ -1,0 +1,3 @@
+# Full45 numerical reference; use Python 3.10.18
+numpy==1.26.4
+scipy==1.15.3

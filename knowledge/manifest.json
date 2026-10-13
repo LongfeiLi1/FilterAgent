@@ -1,0 +1,42 @@
+{
+  "knowledge_version": "active_rc_knowledge_0.1.0",
+  "source_package_date": "2026-10-10",
+  "enabled_card_ids": [
+    "K01",
+    "K02",
+    "K03",
+    "K04",
+    "K05",
+    "K06",
+    "K07",
+    "K10"
+  ],
+  "disabled_card_ids": [
+    "K08",
+    "K09",
+    "K11",
+    "K12"
+  ],
+  "node_map_id": "sk_lp_cg_cf_v1",
+  "runtime_allowlist": [
+    "cards.json",
+    "sources.json"
+  ],
+  "source_snapshots_available": false,
+  "source_snapshot_hashes": null,
+  "data_partition": "general_knowledge",
+  "result_or_experience_ingestion": false,
+  "resources": {
+    "cards.json": "17c5ace2e63ed1072c55ef13fffb2d878771ef8e222a495aee7ba8b64ea17472",
+    "sources.json": "7d4a2570105ca686f0dffa846c75b1af0ecd50eedc8d7ffde03e818d2e0e65b5"
+  },
+  "implemented_pure_tools": {
+    "sk_constant_gain_v1": "rc_agent.knowledge_tools.sk_constant_gain",
+    "f3db_relative_dc_v1": "rc_agent.knowledge_tools.f3db_relative_dc",
+    "bounded_rc_coordinate_v1": "rc_agent.knowledge_tools.bounded_rc_coordinate"
+  },
+  "deferred_tool_ids": [
+    "sk_mna_v1"
+  ],
+  "physical_tool_requests_only": "Existing budgeted evaluator/optimizer interfaces; no execution by retriever"
+}

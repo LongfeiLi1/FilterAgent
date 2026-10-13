@@ -1,0 +1,8 @@
+{
+  "FILTERAGENT_API_KEY": "",
+  "FILTERAGENT_MODEL": "qwen3.8-flash",
+  "FILTERAGENT_BASE_URL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "FILTERAGENT_PDK_LIB": "",
+  "FILTERAGENT_BENCHMARK": "../FilterAgent-benchmark",
+  "note": "Documentation only. Set environment variables; no config file is loaded."
+}

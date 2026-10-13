@@ -1,0 +1,12 @@
+[build-system]
+requires=["setuptools>=68"]
+build-backend="setuptools.build_meta"
+[project]
+name="filteragent-full"
+version="0.7.1"
+description="Full FilterAgent r7a and independent 45-case circuit-sizing benchmark interface"
+requires-python=">=3.10"
+dependencies=["numpy>=1.26,<3","scipy>=1.15,<2"]
+[tool.pytest.ini_options]
+pythonpath=["src",".","benchmark_interfaces","orchestration/filteragent_v3"]
+testpaths=["tests","src/filteragent_r7a","newbench/metrics","newbench/topologies","newbench/hp_validation","benchmark_interfaces/topology_stability"]

@@ -1,0 +1,74 @@
+{
+  "version": 2,
+  "physical_bounds": {
+    "r1": [
+      10000.0,
+      1000000.0
+    ],
+    "r2": [
+      10000.0,
+      1000000.0
+    ],
+    "cg": [
+      5e-12,
+      1e-10
+    ],
+    "cf": [
+      5e-12,
+      2e-10
+    ],
+    "current_scale": [
+      0.7,
+      1.4
+    ],
+    "output_scale": [
+      0.7,
+      1.4
+    ],
+    "cc_pf": [
+      1.0,
+      4.0
+    ]
+  },
+  "initial": {
+    "r1": 200000.0,
+    "r2": 200000.0,
+    "cg": 2e-11,
+    "cf": 4e-11,
+    "current_scale": 1.0,
+    "output_scale": 1.0,
+    "cc_pf": 2.0,
+    "rz_ohm": 4604.0
+  },
+  "optimizer": {
+    "backend": "shared bounded_powell / scipy Powell",
+    "coordinate_initialization": true,
+    "log_coordinate_probe_step": 0.08,
+    "early_stop": "first measured scalar/port/transient feasible candidate after mandatory coordinate initialization; independently recheck; strict success still requires full stability",
+    "all_spice_attempts_charged": true
+  },
+  "common_acceptance": {
+    "dc_gain_range": [
+      0.95,
+      1.05
+    ],
+    "dc_out_range_v": [
+      1.195,
+      1.205
+    ],
+    "minimum_saturation_margin_v": 0.05,
+    "fit_max_component_error": 0.03,
+    "step_final_error_max_v": 1e-05,
+    "step_tail_peak_to_peak_max_v": 1e-05,
+    "stability_status_required": "pass_numerical_local",
+    "stability_scope": "pinned SKY130 tt model and measured DC point; full closed-loop numerical small-signal check plus finite step recovery",
+    "global_nonlinear_or_pvt_certificate": "not_claimed",
+    "phase_margin_scope": "Tian two-port output return diagnostic, not sole full stability gate"
+  },
+  "phase_margin_min_deg": 60.0,
+  "tasks": [
+    {
+      "phase_margin_min_deg": 60.0
+    }
+  ]
+}

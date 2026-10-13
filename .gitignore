@@ -1,0 +1,14 @@
+output/
+.venv/
+*.egg-info/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+!.env.example
+*private*
+external/
+*.log
+.DS_Store
+._*
